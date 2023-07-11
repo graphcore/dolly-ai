@@ -5,7 +5,7 @@
 
 # Dolly 2.0
 
-<center><img width="500" alt="Dolly logo" src="dolly-logo.png"></center>
+<p align="center"><img width="500" alt="Dolly logo" src="dolly-logo.png"></p>
 
 Dolly 2.0 is a 12B parameter language model trained and instruction fine-tuned by Databricks. By instruction fine-tuning the large language model (LLM), we obtain an LLM better suited for human interactivity. Crucially, Databricks released all code, model weights, and their fine-tuning dataset with an open-source license that permits commercial use. This makes Dolly 2.0 the world's first, truly open-source instruction-tuned LLM.
 
