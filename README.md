@@ -5,14 +5,13 @@
 
 # Dolly 2.0
 
-[Insert an image, for example:]
-<img width="500" alt="Waveform" src="https://github.com/graphcore/whisper/assets/81682248/5f21338f-5358-4686-97cc-1f321405607f">
+<img width="500" alt="Dolly logo" src="dolly-logo.png">
 
-Dolly 2.0 is a 12B parameter language model trained and instruction fine-tuned by Databricks. By instruction fine-tuning the large language model (LLM), we obtain an LLM better suited for human interactivity. Crucially, Databricks released all code, model weights, and their fine-tuning dataset with an open-source license that permits commercial use. This makes Dolly 2.0 the world's first, truly open-source instruction-tuned LLM. 
+Dolly 2.0 is a 12B parameter language model trained and instruction fine-tuned by Databricks. By instruction fine-tuning the large language model (LLM), we obtain an LLM better suited for human interactivity. Crucially, Databricks released all code, model weights, and their fine-tuning dataset with an open-source license that permits commercial use. This makes Dolly 2.0 the world's first, truly open-source instruction-tuned LLM.
 
 ## Dolly notebooks powered by IPUs
 
-| Notebook | Framework | Type | Try for Free 
+| Notebook | Framework | Type | Try for Free
 | ------------- | ------------- | ------------- | ------------- |
 | Dolly 2.0 – The World’s First, Truly Open Instruction-Tuned LLM on IPUs – Inference | Hugging Face | Inference | [![Gradient](https://assets.paperspace.io/img/gradient-badge.svg)](https://ipu.dev/YFKSnz)
 

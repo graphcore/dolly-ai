@@ -7,18 +7,19 @@ _common_target_repository: &_common_target_repository
     origin: notebooks/
     ref: null
 
-whisper:
+dolly:
   source:
     paths:
     - expression: '*'
-      path: whisper/whisper-example.ipynb
+      path: dolly-instruction-following/Dolly2-an-OSS-instruction-LLM.ipynb
       recursive: true
     repository:
       <<: *_gradient_huggingface
       prefix: notebooks/
   target:
     renames:
-      ./whisper-example.ipynb: ./whisper-ipu.ipynb
+      ./Dolly2-an-OSS-instruction-LLM.ipynb: ./dolly-ipu.ipynb
     repository:
       <<: *_common_target_repository
       prefix: ./
+
