@@ -10,7 +10,9 @@ _common_target_repository: &_common_target_repository
 dolly:
   source:
     paths:
-    - path: dolly-instruction-following/
+    - expression: '*'
+      path: dolly-instruction-following/
+      recursive: true
     repository:
       <<: *_gradient_huggingface
       prefix: dolly-instruction-following/
