@@ -11,14 +11,12 @@ dolly:
   source:
     paths:
     - expression: '*'
-      path: dolly-instruction-following/Dolly2-an-OSS-instruction-LLM.ipynb
+      path: dolly-instruction-following/
       recursive: true
     repository:
       <<: *_gradient_huggingface
       prefix: notebooks/
   target:
-    renames:
-      ./Dolly2-an-OSS-instruction-LLM.ipynb: ./dolly-ipu.ipynb
     repository:
       <<: *_common_target_repository
       prefix: ./
