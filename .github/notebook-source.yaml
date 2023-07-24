@@ -11,11 +11,11 @@ dolly:
   source:
     paths:
     - expression: '*'
-      path: dolly-instruction-following/
+      path: dolly2-instruction-following/
       recursive: true
     repository:
       <<: *_gradient_huggingface
-      prefix: dolly-instruction-following/
+      prefix: dolly2-instruction-following/
   target:
     repository:
       <<: *_common_target_repository
