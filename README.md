@@ -20,7 +20,6 @@ In this Paperspace Gradient notebook, you will learn how to run Dolly 2.0 with y
 
 ## Dolly resources
 
-* [GitHub Code](https://github.com/graphcore/Gradient-HuggingFace/tree/main/dolly2-instruction-following)
 * [Blog](https://www.graphcore.ai/posts/dolly-2.0-open-source-language-model-with-chatgpt-like-interactivity)
 
 To do more with Dolly on IPUs, or to speak to an expert, please feel free to [contact us](https://www.graphcore.ai/speak-to-an-expert-dolly-ai).
