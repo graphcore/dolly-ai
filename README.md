@@ -30,3 +30,7 @@ To do more with Dolly on IPUs, or to speak to an expert, please feel free to [co
 Join our growing community and interact with AI experts, IPU developers and researchers. Hear the latest IPU news and get access to our newest models.
 
 [![Join our Slack Community](https://img.shields.io/badge/Slack-Join%20Graphcore's%20Community-blue?style=flat-square&logo=slack)](https://www.graphcore.ai/join-community)
+
+## License
+
+The contents of this repository are made available according to the terms of the MIT license. See the included [LICENSE](LICENSE) file for details.

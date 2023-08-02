@@ -10,13 +10,21 @@ _common_target_repository: &_common_target_repository
 dolly:
   source:
     paths:
-    - expression: '*'
-      path: dolly2-instruction-following/
-      recursive: true
+    - path: dolly2-instruction-following/api/
+    - path: dolly2-instruction-following/config/
+    - path: dolly2-instruction-following/modelling/
+    - path: dolly2-instruction-following/tests/
+    - path: dolly2-instruction-following/utils/
+    - path: dolly2-instruction-following/Dolly2-an-OSS-instruction-LLM.ipynb
+    - path: dolly2-instruction-following/inference.py
+    - path: dolly2-instruction-following/requirements.txt
+    - path: LICENSE.md
     repository:
       <<: *_gradient_huggingface
       prefix: dolly2-instruction-following/
   target:
+    renames:
+      ./LICENSE.md: ./LICENSE
     repository:
       <<: *_common_target_repository
       prefix: ./
