@@ -2,9 +2,6 @@ _gradient_huggingface: &_gradient_huggingface
   origin: https://github.com/graphcore/Gradient-HuggingFace.git
   ref: main
 
-_examples_internal_repository: &_examples_internal_repository
-  origin: https://github.com/graphcore/examples.git
-  ref: master
 
 _common_target_repository: &_common_target_repository
     origin: notebooks/
@@ -13,31 +10,17 @@ _common_target_repository: &_common_target_repository
 dolly:
   source:
     paths:
-    - path: dolly2-instruction-following/api/
-    - path: dolly2-instruction-following/config/
-    - path: dolly2-instruction-following/modelling/
-    - path: dolly2-instruction-following/tests/
-    - path: dolly2-instruction-following/utils/
-    - path: dolly2-instruction-following/Dolly2-an-OSS-instruction-LLM.ipynb
-    - path: dolly2-instruction-following/inference.py
-    - path: dolly2-instruction-following/requirements.txt
+    - path: dolly2-instruction-following/
+    - path: LICENSE.md
+    excludes:
+    - path: dolly2-instruction-following/OpenAssistant-Pythia-12B-Chatbot.ipynb
     repository:
       <<: *_gradient_huggingface
       prefix: dolly2-instruction-following/
   target:
+    renames:
+      ./LICENSE.md: ./LICENSE
     repository:
       <<: *_common_target_repository
       prefix: ./
 
-dolly-license:
-  source:
-    paths:
-      - path: LICENSE
-    repository:
-      <<: *_examples_internal_repository
-      prefix: ./
-  target:
-    renames: {}
-    repository:
-      <<: *_common_target_repository
-      prefix: ./
